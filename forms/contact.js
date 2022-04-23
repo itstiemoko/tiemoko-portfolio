@@ -1,7 +1,7 @@
 function removeItems() {
-    document.getElementById('nom').value = '';
+    document.getElementById('name').value = '';
     document.getElementById('email').value = '';
-    document.getElementById('objet').value = '';
+    document.getElementById('subject').value = '';
     document.getElementById('message').value = '';
 }
 
@@ -10,10 +10,9 @@ btn.addEventListener('click', function(e) {
     e.preventDefault()
     var nom = document.getElementById('name').value;
     var email = document.getElementById('email').value;
-    var objet = document.getElementById('subject').value;
+    var subject = document.getElementById('subject').value;
     var message = document.getElementById('message').value;
-    var body = '' + nom + '<br>' + email + '<br>' +
-        objet + '<br>' + message;
+    var body = "Sujet : " + subject + "<br>" + "Nom complet : " + nom + "<br>" + "Email : " + email + "<br>" + "Message : " +message
 
 
     Email.send({
@@ -22,11 +21,11 @@ btn.addEventListener('click', function(e) {
         Password: "jpxiyttgqmjqwsql",
         To: 'tiemogosogodogo94@gmail.com',
         From: email,
-        Subject: objet,
+        Subject: subject,
         Body: body,
     }).then(
         message => alert("Votre message a été envoyé. Merci !")
     );
 
     removeItems();
-})
+});
