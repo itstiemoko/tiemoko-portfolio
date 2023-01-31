@@ -16,10 +16,10 @@ btn.addEventListener('click', function(e) {
 
 
     Email.send({
-        Host: "smtp.office365.com",
-        Username: "monpro@1simple1.com",
-        Password: "BonpRo@2022Em",
-        To: 'tiemogosogodogo94@gmail.com',
+        Host: "",
+        Username: "",
+        Password: "",
+        To: '',
         From: email,
         Subject: subject,
         Body: body,
