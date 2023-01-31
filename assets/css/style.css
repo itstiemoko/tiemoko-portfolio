@@ -459,22 +459,15 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Interet
+# Interet and CustomStyleItem
 --------------------------------------------------------------*/
-.interet .interet-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #45505b;
-}
-.interet .interet-item {
+.interet .interet-item, .customStyleItem {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #0563bb;
   position: relative;
 }
-.interet .interet-item h4 {
+.interet .interet-item h4, .customStyleItem h3 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -491,16 +484,16 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.interet .interet-item ul {
+.interet .interet-item ul, .customStyleItem ul {
   padding-left: 20px;
 }
-.interet .interet-item ul li {
+.interet .interet-item ul li, .customStyleItem ul li {
   padding-bottom: 10px;
 }
-.interet .interet-item:last-child {
+.interet .interet-item:last-child, .customStyleItem::last {
   padding-bottom: 0;
 }
-.interet .interet-item::before {
+.interet .interet-item::before, .customStyleItem::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -511,6 +504,19 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
+
+.profileTitle, .skills-content h3 {
+  color:  #0563bb;
+}
+
+.skills-content {
+  padding-left: 10px;
+}
+
+/* .portfolio-wrap {
+  width: 50%;
+  height: 50%;
+} */
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -702,46 +708,6 @@ section {
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
-
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .count-box {
-  padding: 30px 30px 25px 30px;
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #0563bb;
-  color: #fff;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
-.facts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #011426;
-}
-.facts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
 }
 
 
