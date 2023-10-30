@@ -4,4 +4,4 @@ Ce dépôt est le code source de mon portfolio
 
 # Site web
 
-https://tieckby.github.io/tiemoko-portfolio
+https://itstiemoko.github.io/tiemoko-portfolio
